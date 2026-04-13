@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abhineet Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<nav class="navbar">
+  <div class="nav-logo">A</div>
+
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="abhineet.kumar (2).pdf" download>Resume</a>
+    </li>
+  </ul>
+</nav>
+
+<section id="hero" class="hero">
+
+  <div class="hero-content fade-up">
+    <h1>
+      Hi, I'm <span class="gradient-text">Abhineet</span> 👋
+    </h1>
+
+    <h2 class="subtitle">
+      A developer building scalable & impactful systems 🚀
+    </h2>
+
+    <div class="buttons">
+      <a href="about.html" class="btn-outline">Skip The Small Talk 🚀</a>
+      <a href="abhineet.kumar (2).pdf" class="btn-primary">View Resume 📄</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/abhineetkumar1" target="_blank">in</a>
+      <a href="mailto:abhineetk192@gmail.com">✉</a>
+    </div>
+  </div>
+
+  <!-- ✅ MOVE IT HERE -->
+  <div class="floating-thoughts">
+  <p id="typed-text">
+    <span id="typed-main"></span><span id="typed-emoji"></span>
+  </p>
+</div>
+
+  <div class="scroll-indicator">
+    Keep Scrolling ↓
+  </div>
+
+</section>
+
+<section id="projects" class="projects">
+  <h2>Some Things I've Built 💻</h2>
+
+  <div class="cards">
+
+    <div class="card" onclick="openProject()">
+      <h3>Crypto Trade Simulator</h3>
+      <p>Real-time orderbook trading system with performance tracking.</p>
+    </div>
+
+    <div class="card" onclick="openProject()">
+      <h3>Fraud Detection System</h3>
+      <p>ML-based credit card fraud detection using deep learning.</p>
+    </div>
+
+    <div class="card" onclick="openProject()">
+      <h3>DevOps CI/CD App</h3>
+      <p>Dockerized app deployed using GitHub Actions.</p>
+    </div>
+
+    <div class="card" onclick="openProject()">
+      <h3>Grammar Scoring Engine</h3>
+      <p>AI-based grammar scoring using speech-to-text.</p>
+    </div>
+
+  </div>
+</section>
+<section id="contact" class="contact">
+
+  <h2 class="gradient-text fade-up">Contact & Connect</h2>
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-card fade-up">
+      <h3>Let’s work together 🚀</h3>
+      <p>
+        Have a project idea, collaboration, or just want to connect?
+        Feel free to reach out — always open to building something amazing.
+      </p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> 
+          <a href="mailto:abhineetk192@gmail.com">abhineetk192@gmail.com</a>
+        </p>
+
+        <p><strong>GitHub:</strong> 
+          <a href="https://github.com/AbhineetKumar1" target="_blank">
+            github.com/AbhineetKumar1
+          </a>
+        </p>
+
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/abhineetkumar1" target="_blank">
+            linkedin.com/in/abhineetkumar1
+          </a>
+        </p>
+      </div>
+
+    </div> <!-- ✅ FIXED: closed left card -->
+
+    <!-- RIGHT -->
+    <div class="contact-card fade-up">
+      <h3>Quick message 💬</h3>
+
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="from_name" placeholder="Your name" required>
+        <input type="email" name="from_email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Tell me something..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
